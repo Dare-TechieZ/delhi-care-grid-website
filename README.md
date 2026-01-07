@@ -116,38 +116,68 @@ Demo Mode
 
 ⚡ Quick Actions
 ➡️Rapid access to important platform features
+
 ➡️One-click navigation for alerts, AI assistant, and dashboards
 
 🤖 AI & Technology Highlights
 ➡️AI-powered health information responses
+
 ➡️Enhanced search with suggested answers
+
 ➡️Overview of AI applications in public health
+
 ➡️Responsible AI and ethical AI principles
+
 ➡️How AI is used in preventive healthcare
 
+
+
 🌍 Transparency & Data
+
 ➡️Verified government and health data sources
+
 ➡️Data source transparency
+
 ➡️Environmental and health metrics visibility
 
+
+
 📊 Impact & Planning
+
 ➡️Impact metrics dashboard
+
 ➡️Implementation plan page
+
 ➡️Stakeholder mapping
+
 ➡️Delhi-specific health challenges overview
 
+
+
 👥 Citizen Support
+
 ➡️Citizen Guide Page
+
 ➡️How to use Delhi Care Grid effectively
+
 ➡️Step-by-step assistance for users
+
 🔗 Official & External Resources & Official government links
+
 ➡️Health helplines
+
 ➡️Policy documentation
 
+
+
 🌐 Accessibility
+
 ➡️Bilingual support (Hindi / English)
+
 ➡️Government-tech UI design
+
 ➡️Inclusive and user-friendly navigation
+
 
 📜 License & Disclaimer
 
