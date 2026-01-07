@@ -262,15 +262,26 @@ export default function DashboardsPage() {
                       <Card className="bg-white/5 backdrop-blur-sm border-white/10 p-6">
                         <h3 className="text-lg font-heading font-bold text-foreground mb-4">Quick Actions</h3>
                         <div className="space-y-3">
-                          <Button className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/90 justify-start">
+                          <Button 
+                            onClick={() => window.location.href = '/dashboards'}
+                            className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/90 justify-start"
+                          >
                             <Activity className="w-4 h-4 mr-2" />
                             View Health Report
                           </Button>
-                          <Button variant="outline" className="w-full border-white/20 text-foreground hover:border-secondary hover:text-secondary justify-start">
+                          <Button 
+                            onClick={() => window.location.href = '/alerts'}
+                            variant="outline" 
+                            className="w-full border-white/20 text-foreground hover:border-secondary hover:text-secondary justify-start"
+                          >
                             <AlertTriangle className="w-4 h-4 mr-2" />
                             Check Alerts
                           </Button>
-                          <Button variant="outline" className="w-full border-white/20 text-foreground hover:border-secondary hover:text-secondary justify-start">
+                          <Button 
+                            onClick={() => window.location.href = '/mental-wellness'}
+                            variant="outline" 
+                            className="w-full border-white/20 text-foreground hover:border-secondary hover:text-secondary justify-start"
+                          >
                             <Heart className="w-4 h-4 mr-2" />
                             Access Resources
                           </Button>

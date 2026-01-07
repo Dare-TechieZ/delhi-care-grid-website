@@ -21,7 +21,7 @@ export default function Footer() {
 
   const footerSections = [
     {
-      title: 'Quick Links',
+      title: 'Platform',
       links: [
         { name: 'Home', href: '/' },
         { name: 'Environment & Air Health', href: '/environment' },
@@ -30,7 +30,7 @@ export default function Footer() {
       ],
     },
     {
-      title: 'Resources',
+      title: 'Features',
       links: [
         { name: 'Dashboards', href: '/dashboards' },
         { name: 'Alerts & Notifications', href: '/alerts' },
@@ -39,12 +39,21 @@ export default function Footer() {
       ],
     },
     {
-      title: 'Legal',
+      title: 'Transparency',
       links: [
-        { name: 'Privacy Policy', href: '/privacy' },
-        { name: 'Terms of Service', href: '/terms' },
-        { name: 'Disclaimer', href: '/disclaimer' },
-        { name: 'Accessibility', href: '/accessibility' },
+        { name: 'How AI Is Used', href: '/how-ai-is-used' },
+        { name: 'Delhi Problems', href: '/delhi-problems' },
+        { name: 'Data Sources', href: '/data-sources' },
+        { name: 'Responsible AI', href: '/responsible-ai' },
+      ],
+    },
+    {
+      title: 'Implementation',
+      links: [
+        { name: 'Impact Metrics', href: '/impact-metrics' },
+        { name: 'Implementation Plan', href: '/implementation-plan' },
+        { name: 'Stakeholder Mapping', href: '/stakeholder-mapping' },
+        { name: 'Login', href: '/login' },
       ],
     },
   ];
@@ -144,6 +153,29 @@ export default function Footer() {
             </div>
           </div>
         )}
+
+        {/* Data Sources Acknowledgement */}
+        <div className="mt-12 pt-8 border-t border-white/10">
+          <h3 className="text-base font-heading font-semibold text-foreground mb-4">Data Sources & Acknowledgements</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm font-paragraph text-foreground/70">
+            <div>
+              <p className="font-medium text-foreground mb-2">Environmental Data:</p>
+              <p>Central Pollution Control Board (CPCB), India Meteorological Department (IMD), Delhi Pollution Control Committee (DPCC)</p>
+            </div>
+            <div>
+              <p className="font-medium text-foreground mb-2">Health Data:</p>
+              <p>Ministry of Health & Family Welfare, National Centre for Disease Control (NCDC), Indian Council of Medical Research (ICMR)</p>
+            </div>
+            <div>
+              <p className="font-medium text-foreground mb-2">Mental Health:</p>
+              <p>National Institute of Mental Health & Neurosciences (NIMHANS), Ministry of Education, Registered NGOs</p>
+            </div>
+            <div>
+              <p className="font-medium text-foreground mb-2">Government Support:</p>
+              <p>Government of NCT of Delhi, Ministry of Environment, Forest & Climate Change, Ayushman Bharat Programme</p>
+            </div>
+          </div>
+        </div>
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-white/10">

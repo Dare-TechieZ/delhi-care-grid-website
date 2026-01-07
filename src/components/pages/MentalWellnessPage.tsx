@@ -37,6 +37,7 @@ export default function MentalWellnessPage() {
       icon: Brain,
       color: 'delhi-purple',
       features: ['One-on-one sessions', 'Group therapy', 'Crisis intervention'],
+      demoLink: '/demo',
     },
     {
       title: 'Peer Support Network',
@@ -44,6 +45,7 @@ export default function MentalWellnessPage() {
       icon: Users,
       color: 'secondary',
       features: ['24/7 peer chat', 'Support groups', 'Mentorship programs'],
+      demoLink: '/demo',
     },
     {
       title: 'Wellness Workshops',
@@ -51,6 +53,7 @@ export default function MentalWellnessPage() {
       icon: Heart,
       color: 'health-green',
       features: ['Weekly workshops', 'Meditation sessions', 'Skill-building activities'],
+      demoLink: '/demo',
     },
   ];
 
@@ -185,7 +188,7 @@ export default function MentalWellnessPage() {
                     {program.description}
                   </p>
                   
-                  <ul className="space-y-2">
+                  <ul className="space-y-2 mb-6">
                     {program.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center space-x-2 text-sm font-paragraph text-foreground/80">
                         <div className={`w-1.5 h-1.5 bg-${program.color} rounded-full`} />
@@ -193,6 +196,12 @@ export default function MentalWellnessPage() {
                       </li>
                     ))}
                   </ul>
+
+                  <a href={program.demoLink} className="inline-block">
+                    <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
+                      Explore in Demo
+                    </Button>
+                  </a>
                 </Card>
               </motion.div>
             ))}

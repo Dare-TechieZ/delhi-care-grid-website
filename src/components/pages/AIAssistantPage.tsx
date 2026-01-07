@@ -32,10 +32,32 @@ export default function AIAssistantPage() {
       return;
     }
 
+    // Check for default answers first
+    const queryLower = query.toLowerCase();
+    for (const [key, answer] of Object.entries(defaultAnswers)) {
+      if (queryLower.includes(key)) {
+        const defaultItem: VerifiedHealthInformation = {
+          _id: 'default-' + key,
+          healthQuestion: query,
+          verifiedAnswer: answer,
+          sourceCitation: 'Delhi Care Grid - AI Assistant',
+          healthCategory: 'General Health',
+          expertReviewer: 'Health Experts',
+          lastUpdated: new Date(),
+        };
+        setSearchResults([defaultItem, ...healthInfo.filter(info => 
+          info.healthQuestion?.toLowerCase().includes(queryLower) ||
+          info.verifiedAnswer?.toLowerCase().includes(queryLower) ||
+          info.keywords?.toLowerCase().includes(queryLower)
+        )]);
+        return;
+      }
+    }
+
     const filtered = healthInfo.filter(info => 
-      info.healthQuestion?.toLowerCase().includes(query.toLowerCase()) ||
-      info.verifiedAnswer?.toLowerCase().includes(query.toLowerCase()) ||
-      info.keywords?.toLowerCase().includes(query.toLowerCase())
+      info.healthQuestion?.toLowerCase().includes(queryLower) ||
+      info.verifiedAnswer?.toLowerCase().includes(queryLower) ||
+      info.keywords?.toLowerCase().includes(queryLower)
     );
     setSearchResults(filtered);
   };
@@ -83,6 +105,14 @@ export default function AIAssistantPage() {
     'Nutrition guidelines for school students',
     'Stress management techniques',
   ];
+
+  const defaultAnswers: Record<string, string> = {
+    'air pollution': 'Air pollution in Delhi is primarily caused by vehicular emissions, industrial activities, and seasonal factors. To protect yourself: 1) Use N95 masks during high pollution days, 2) Keep windows closed during peak pollution hours (6-10 AM), 3) Use air purifiers indoors, 4) Stay hydrated and consume antioxidant-rich foods, 5) Monitor AQI regularly through official channels. Children and elderly should limit outdoor activities during poor air quality days.',
+    'mental health': 'Mental health is crucial for overall well-being. Delhi Care Grid provides: 1) Free confidential counseling services, 2) 24/7 mental health helplines, 3) Peer support networks, 4) Stress management workshops, 5) Mindfulness and meditation sessions. If you\'re experiencing anxiety, depression, or stress, reach out to our helplines or access our mental wellness resources. Remember, seeking help is a sign of strength.',
+    'preventive health': 'Preventive health measures are key to avoiding diseases. Essential steps include: 1) Regular health check-ups, 2) Vaccination as per government guidelines, 3) Balanced nutrition and regular exercise, 4) Adequate sleep (7-8 hours), 5) Stress management, 6) Avoiding tobacco and alcohol, 7) Maintaining hygiene. Delhi Care Grid monitors environmental factors and provides personalized guidance based on your health profile.',
+    'nutrition': 'Healthy nutrition for students should include: 1) Whole grains for energy, 2) Proteins (eggs, legumes, dairy) for growth, 3) Fruits and vegetables for vitamins, 4) Calcium-rich foods for bone health, 5) Limited sugar and processed foods. Drink 6-8 glasses of water daily. Avoid skipping breakfast as it affects concentration and academic performance.',
+    'stress management': 'Effective stress management techniques include: 1) Deep breathing exercises (5-10 minutes daily), 2) Regular physical activity (30 minutes), 3) Adequate sleep, 4) Mindfulness meditation, 5) Talking to trusted friends or counselors, 6) Time management and setting realistic goals, 7) Engaging in hobbies. If stress persists, contact our mental health helplines for professional support.',
+  };
 
   return (
     <div className="min-h-screen bg-background">
