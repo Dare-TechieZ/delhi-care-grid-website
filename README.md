@@ -1,147 +1,67 @@
-# Wixstro - Wix Astro Template
+⭐​Overview
+This plan creates an official government-grade preventive health platform website for Delhi Care Grid. It features environmental health monitoring, student mental wellness support, verified health information, role-based dashboards, preventive alerts, and a health AI assistant, all designed with a government-tech aesthetic and bilingual support.
 
-A modern, full-featured Wix Astro template built with React, TypeScript, and Tailwind CSS. This template provides a solid foundation for building dynamic, interactive websites with Wix's powerful ecosystem.
+⭐​Key features
+- View Home Content Displays the platform overview, key statistics, and call-to-action buttons for different user roles.
+- View Environmental Health Data Shows real-time air quality, pollution levels, and environmental health risks for Delhi.
+- View Mental Wellness Resources Displays student mental wellness programs, counseling resources, and wellness tips.
+- Access Health AI Assistant Allows users to query verified health information and receive AI-powered guidance.
+- View Dashboard Provides role-based dashboards for students, parents, teachers, admins, and government officials with relevant data and insights.
+- View Alerts & Notifications Displays preventive health alerts, environmental warnings, and personalized guidance based on user role.
+- View Awareness Hub Shows educational content, health articles, awareness campaigns, and resources.
+- Submit Secure Login Enables role-based authentication for students, parents, teachers, admins, and government officials.
+- Access Demo Mode Allows visitors to explore the platform without logging in.
+- View About, Policy & Impact Displays information about the platform, privacy policies, disclaimers, government links, and impact metrics.
 
-## 🚀 Features
+⭐​Structure
+- Header (Reusable) Contains the Delhi Care Grid logo, navigation menu (Home, Environment & Air Health, Mental Wellness, Health AI Assistant, Dashboards, Alerts, Awareness Hub, About), language toggle (Hindi/English), and login/demo mode buttons.
+- Footer (Reusable) Contains official government links, privacy policy, disclaimers, health helplines, contact information, and social media links.
+- Home Page Displays platform overview, key statistics, featured alerts, and role-based entry points.
+- Environment & Air Health Page Shows real-time air quality data, pollution levels, environmental health risks, and preventive guidance.
+- Mental Wellness Page Displays student wellness programs, counseling resources, wellness tips, and support information.
+- Health AI Assistant Page Provides an interface for users to query verified health information and receive AI-powered guidance.
+- Dashboards Page Hosts role-based dashboards for students, parents, teachers, admins, and government officials with relevant metrics and insights.
+- Alerts & Notifications Page Displays preventive health alerts, environmental warnings, and personalized guidance.
+- Awareness Hub Page Shows educational content, health articles, awareness campaigns, and downloadable resources.
+- About, Policy & Impact Page Contains platform information, privacy policies, disclaimers, government links, and impact metrics.
+- Login Page Provides secure role-based authentication interface.
+- Demo Mode Interface Allows visitors to explore the platform with sample data.
 
-- **Astro Framework** - Modern static site generator with server-side rendering
-- **React Integration** - Full React support with JSX components
-- **TypeScript** - Type-safe development experience
-- **Tailwind CSS** - Utility-first CSS framework with custom components
-- **Wix Integration** - Seamless integration with Wix services and APIs
-- **Modern UI Components** - Radix UI components with custom styling
-- **Authentication** - Built-in member authentication and protected routes
-- **CMS Integration** - Content management system integration
-- **Client-side Routing** - React Router for seamless navigation
-- **Responsive Design** - Mobile-first responsive design
-- **Testing** - Vitest testing framework setup
-- **Development Tools** - ESLint, TypeScript checking, and more
-
-## 🛠️ Tech Stack
-
-- **Framework**: Astro 5.8.0
-- **Frontend**: React 18.3.0
-- **Styling**: Tailwind CSS 3.4.14
-- **Language**: TypeScript 5.8.3
-- **UI Components**: Radix UI
-- **State Management**: Zustand
-- **Forms**: React Hook Form with Zod validation
-- **Testing**: Vitest
-- **Build Tool**: Vite
-- **Deployment**: Cloudflare
-
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js (version 18 or higher)
-- npm or yarn package manager
-- Wix account and site
-
-### Installation
-
-1. **Install dependencies**:
-   ```bash
-   npm run install-template
-   ```
-
-2. **Set up environment variables**:
-   ```bash
-   npm run env
-   ```
-
-3. **Start development server**:
-   ```bash
-   npm run dev
-   ```
-
-The development server will start and you can view your site at `http://localhost:4321`.
-
-## 📁 Project Structure
-
-```
-main/
-├── src/
-│   ├── components/          # React components
-│   │   ├── ui/             # Reusable UI components
-│   │   ├── Head.tsx        # Page head component
-│   │   └── Router.tsx      # Routing component
-│   ├── hooks/              # Custom React hooks
-│   ├── lib/                # Utility functions
-│   ├── pages/              # Astro pages
-│   └── styles/             # Global styles
-├── integrations/           # Wix integrations
-│   ├── cms/               # CMS integration
-│   └── members/           # Member authentication
-├── public/                # Static assets
-└── eslint-rules/          # Custom ESLint rules
-```
-
-## 🎨 UI Components
-
-This template includes a comprehensive set of UI components built with Radix UI and styled with Tailwind CSS:
-
-- **Layout**: Accordion, Collapsible, Tabs, Sheet
-- **Forms**: Input, Select, Checkbox, Radio Group, Switch
-- **Navigation**: Navigation Menu, Menubar, Breadcrumb
-- **Feedback**: Alert, Toast, Progress, Skeleton
-- **Overlays**: Dialog, Popover, Tooltip, Hover Card
-- **Data Display**: Table, Card, Badge, Avatar
-- **Interactive**: Button, Toggle, Slider, Command
-
-## 🔧 Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run release` - Release to Wix
-- `npm run env` - Pull environment variables
-- `npm run check` - Type check with Astro
-- `npm run test:run` - Run tests
-- `npm run install-template` - Install dependencies
-
-## 🧪 Testing
-
-The project includes Vitest for testing:
-
-```bash
-npm run test:run
-```
-
-## 📱 Responsive Design
-
-The template is built with a mobile-first approach and includes:
-
-- Responsive breakpoints
-- Touch-friendly interactions
-- Optimized images
-- Flexible layouts
-
-## 🚀 Deployment
-
-The template is configured for deployment on Cloudflare:
-
-```bash
-npm run build
-```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Run tests and linting
-5. Submit a pull request
-
-## 🆘 Support
-
-For support and questions:
-
-- Check the [Wix Developer Documentation](https://dev.wix.com/)
-- Review the [Astro Documentation](https://docs.astro.build/)
-
-
----
-
-Built with ❤️ using Wix Vibe, Astro, and modern web technologies.
+⭐​Quick actions section
+Users can now quickly access important features.
+Health information responses
+Users receive tailored health guidance.
+Enhanced search functionality
+Users will get suggested answers for health queries.
+Program demo links
+Each program now includes a demo link for easy access.
+Program demo action
+Visitors can now explore programs through demo links.
+AI applications overview
+Visitors can learn about AI applications for health.
+Delhi health problems overview
+This section highlights health problems in Delhi.
+Data sources and transparency
+Visitors can now access verified data sources directly.
+Responsible AI page
+Visitors can now explore ethical AI principles easily.
+Impact metrics page
+Users can explore detailed metrics of health impact.
+Implementation plan page
+Users can now view a comprehensive implementation plan.
+Stakeholder mapping page
+Users can now view comprehensive stakeholder information.
+How AI is used page
+This section provides insights into AI usage in health.
+Updated navigation routes
+Users can now access new content sections for deeper insights.
+Footer section enhancement
+Visitors can now find updated sections for easier navigation.
+Official government links
+Users can now access official resources conveniently.
+Citizen guide page
+This guide details how to use Delhi Care Grid effectively.
+Citizen guide page
+Users can now access a new citizen guide for assistance.
+Citizen guide section
+Now includes a citizen guide for improved access.
