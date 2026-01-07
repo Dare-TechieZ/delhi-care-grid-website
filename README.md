@@ -81,37 +81,66 @@ Contact information
 Social media links
 
 📄 Pages
+
 Home Page
+
     Platform overview
+    
     Key statistics
+    
     Featured alerts
+    
     Role-based entry points
+
 Environment & Air Health
+
     Real-time air quality data
+    
     Pollution insights
+    
     Health risk indicators
+    
     Preventive recommendations
+
 Mental Wellness
+
     Student wellness programs
+    
     Counseling resources
+    
     Mental health tips
+
 Health AI Assistant
+
       Query verified health information
+      
       AI-powered guidance interface
 Dashboards
+    
     Role-specific insights and analytics
+
 Alerts & Notifications
     Preventive and environmental alerts
+
 Awareness Hub
+
     Articles, campaigns, and educational material
 
+  
 About, Policy & Impact
+
     Privacy policy
+    
     Government compliance information
+    
     Impact metrics
+
 Login Page
+
     Secure role-based authentication
+
 Demo Mode
+
     Explore platform features using sample data
 
 ⚡ Quick Actions
